@@ -1,0 +1,15 @@
+{
+  "name": "msgco",
+  "version": "1.0.0",
+  "description": "A customizable and extensible messaging system. ",
+  "main": "index.js",
+  "repository": "git@github.com:ashishkumarsinghh/msgco.git",
+  "author": "ashish kumar singh <ashishkumarsinghh@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.7",
+    "twilio": "^3.42.1"
+  }
+}
