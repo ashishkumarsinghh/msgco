@@ -11,5 +11,8 @@
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.7",
     "twilio": "^3.42.1"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
