@@ -1,5 +1,5 @@
 const Hapi = require("@hapi/hapi");
-const dotenv = require("dotenv").config();
+//const dotenv = require("dotenv").config();
 const sendSMSes = require("./sendSMS");
 const init = async () => {
   const server = Hapi.server({
