@@ -1,9 +1,10 @@
 const Hapi = require("@hapi/hapi");
 //const dotenv = require("dotenv").config();
 const sendSMSes = require("./sendSMS");
+const PORT = process.env.PORT || 5000;
 const init = async () => {
   const server = Hapi.server({
-    port: process.env.PORT,
+    port: PORT,
     host: process.env.HOST,
   });
   server.route({
