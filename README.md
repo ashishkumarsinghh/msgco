@@ -16,7 +16,7 @@ You don't need to signup on any messaging service, don't have to setup anything,
 
 # API Endpoint
 
-http://localhost:3000/critical/api
+https://msgco.herokuapp.com/critical/api
 
 # Expected Payload for POST request at endpoint
 
