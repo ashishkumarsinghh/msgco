@@ -10,7 +10,7 @@ You don't need to signup on any messaging service, don't have to setup anything,
 
 # Application flow
 
-1. Register for the API.
+1. Register for the API. (not implemented)
 2. Send POST request with numbers Array, and message body.
 3. msgco service sends SMS to all the numbers provided.
 
@@ -31,4 +31,9 @@ http://localhost:3000/critical/api
 
 # Limitations
 
-Currently because of Twilio Trial account the messages can be sent only to my number as it is verified.
+- Currently because of Twilio Trial account the messages can be sent only to my number as it is verified.
+- If you want to send msgs, you have to set the following parameters in .env file.
+  - TWILIO_SID (you can get it from Twilio Console)
+  - TWILIO_TOKEN(you can get it from Twilio Console)
+  - TWILIO_NUM(you can get it from Twilio Console)
+  - MYNUM(This is your verified number with Twilio)

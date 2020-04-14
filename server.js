@@ -17,6 +17,13 @@ const init = async () => {
       return "OK";
     },
   });
+  server.route({
+    method: "*",
+    path: "/{any*}",
+    handler: (request, h) => {
+      return "Welcome to msgco API.";
+    },
+  });
   await server.start();
   console.log("Server running on %s", server.info.uri);
 };
