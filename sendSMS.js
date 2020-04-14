@@ -1,3 +1,5 @@
+//const dotenv = require("dotenv").config();
+
 const accountSid = process.env.TWILIO_SID;
 const authToken = process.env.TWILIO_TOKEN;
 const client = require("twilio")(accountSid, authToken);
@@ -7,9 +9,16 @@ function sendSMS(to, body) {
     .create({
       body: body,
       from: process.env.TWILIO_NUM,
-      to: to,
+      to: to.trim(),
     })
-    .then((message) => console.log(message.sid));
+    .then((message) => console.log(message.sid))
+    .catch((error) => console.log(error));
 }
 
-module.exports = sendSMS;
+function sendSMSes(to, body) {
+  to.forEach((element) => {
+    sendSMS(element, body);
+  });
+}
+
+module.exports = sendSMSes;
